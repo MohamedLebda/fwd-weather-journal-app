@@ -8,8 +8,8 @@ const temp = document.querySelector("#temp");
 const content = document.querySelector("#content");
 
 // Create a new date instance dynamically with JS
-let d = new Date();
-let newDate = d.getMonth() + "." + d.getDate() + "." + d.getFullYear();
+
+const newDate = new Date().toLocaleDateString("en-GB");
 
 generate.addEventListener("click", () => {
   const zipCode = document.querySelector("#zip").value;
